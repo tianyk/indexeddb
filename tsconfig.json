@@ -1,0 +1,48 @@
+{
+	"compilerOptions": {
+		// 输出模块规范 CommonJS 
+		"module": "ES6",
+		// 允许从没有设置默认导出的模块中默认导入。这并不影响代码的输出，仅为了类型检查。
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		// https://node.green/#ES2019
+		"target": "ES2020",
+		"lib": [
+			"DOM",
+			"ES2015"
+		],
+		"outDir": "dist",
+		// https://www.tslang.cn/docs/handbook/module-resolution.html
+		// 模块解析策略 
+		"moduleResolution": "Node",
+		// 允许编译javascript文件。
+		"allowJs": true,
+		// 输出目录
+		// 严格校验
+		// 在表达式和声明上有隐含的 any类型时报错。
+		"noImplicitAny": true,
+		// 在严格的 null检查模式下， null和 undefined值不包含在任何类型里，只允许用它们自己和 any来赋值（有个例外， undefined可以赋值到 void）。
+		"strictNullChecks": true,
+		"removeComments": false,
+		// 生成相应的 .map文件。
+		"sourceMap": false,
+		// 显示错误信息时使用的语言，比如：en-us。
+		"locale": "zh-cn",
+		"newLine": "lf",
+		"pretty": true,
+		"watch": false
+	},
+	"include": [
+		"**/*.ts",
+		"**/*.js"
+	],
+	"exclude": [
+		"data/",
+		"public/",
+		".temp/",
+		".git/",
+		"logs/",
+		"dist/",
+		"node_modules/"
+	]
+}
