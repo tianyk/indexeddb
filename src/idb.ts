@@ -1,7 +1,7 @@
 namespace idb {
 	/**
- * 数据库异常
- */
+	 * 数据库异常
+	 */
 	class DatabaseError extends Error {
 		constructor(msg: string, err?: Error) {
 			super(msg);
